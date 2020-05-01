@@ -1,10 +1,11 @@
-class BadAssign {
+class Main {
   public static void main(String[] args){
-    int i;
     A a;
-    a = i;
+    int len;
+    len = a.length;
   }
 }
 
 class A {
+  int length_;
 }

@@ -1,8 +1,7 @@
-class BadAssign {
+class Main {
   public static void main(String[] args){
-    int i;
     A a;
-    a = i;
+    a = new B();  // B does not exist
   }
 }
 

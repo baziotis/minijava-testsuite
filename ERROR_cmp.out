@@ -1,0 +1,5 @@
+Operator.compute: 0
+Operator.op1bool: 0
+Operator.op2int: 1
+Operator.result: 5
+In compare expression, one of the parts is not of integer type.

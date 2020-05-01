@@ -1,0 +1,3 @@
+A.send: 0
+A.length_: 0
+In message send expression, the base expression is not of user defined type.
