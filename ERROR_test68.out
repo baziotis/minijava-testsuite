@@ -1,0 +1,6 @@
+Test.start: 0
+Test.next: 8
+Test.test: 0
+Test.i: 8
+Test2.start: 0
+The return expression of method: Test::next has invalid type.

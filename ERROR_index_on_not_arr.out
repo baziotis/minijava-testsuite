@@ -1,0 +1,4 @@
+A.test: 0
+A.foo: 8
+A.a: 0
+In array lookup expression, bad left operand for operator [].

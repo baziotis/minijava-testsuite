@@ -1,0 +1,4 @@
+Test.start: 0
+Test.op: 0
+Test.result: 4
+Incompatible types: boolean and int

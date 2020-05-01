@@ -1,0 +1,17 @@
+B.test: 0
+B.main_: 0
+B.a: 8
+B.b: 12
+B.c: 13
+B.d: 21
+B.c2: 29
+B.dummy: 37
+C.test2: 8
+E.b: 0
+D.test: 0
+D.b: 8
+Receiver.receiveMain: 0
+Receiver.final_: 8
+Receiver.pass2: 16
+Receiver.pass1: 24
+Receiver.get_C_give_B: 32

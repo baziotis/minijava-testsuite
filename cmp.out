@@ -1,0 +1,6 @@
+Operator.compute: 0
+Operator.op1bool: 0
+Operator.op2bool: 1
+Operator.op1int: 2
+Operator.op2int: 6
+Operator.result: 10
