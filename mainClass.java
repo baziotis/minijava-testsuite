@@ -3,6 +3,8 @@
 class Blah {
   public static void main(String[] a) {
     int b;
+    Blah blah;
+    blah = new Blah();
     System.out.println(b);
   }
 }
