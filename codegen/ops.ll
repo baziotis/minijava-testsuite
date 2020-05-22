@@ -100,11 +100,12 @@ entry:
   store i32 2, i32* %v2
   %v3 = add i32 349, 908
   %v4 = load i32, i32* %v1
-  %v5 = load i32, i32* %v2
-  %v6 = sub i32 %v5, 2
-  %v7 = sub i32 %v4, %v6
-  %v8 = icmp slt i32 %v3, %v7
-  ret i1 %v8
+  %v5 = mul i32 23, %v4
+  %v6 = load i32, i32* %v2
+  %v7 = sub i32 %v6, 2
+  %v8 = sub i32 %v5, %v7
+  %v9 = icmp slt i32 %v3, %v8
+  ret i1 %v9
 }
 
 define i1 @A__t4(i8* %v0, i32 %v1, i32* %v2) {
@@ -130,6 +131,7 @@ neg_index_end:
   %v8 = mul i32 %v7, 4
   %v9 = call i8* @calloc(i32 1, i32 %v8)
   %v10 = bitcast i8* %v9 to i32*
+  store i32 10, i32* %v10
   store i32* %v10, i32** %v5
   %v11 = bitcast i8* %v0 to i8***
   %v12 = load i8**, i8*** %v11
@@ -262,6 +264,7 @@ neg_index_end1:
   %v19 = mul i32 %v18, 4
   %v20 = call i8* @calloc(i32 1, i32 %v19)
   %v21 = bitcast i8* %v20 to i32*
+  store i32 %v16, i32* %v21
   %v22 = bitcast i8* %v0 to i8***
   %v23 = load i8**, i8*** %v22
   %v24 = getelementptr inbounds i8*, i8** %v23, i32 2
@@ -283,6 +286,7 @@ neg_index_end2:
   %v31 = mul i32 %v30, 4
   %v32 = call i8* @calloc(i32 1, i32 %v31)
   %v33 = bitcast i8* %v32 to i32*
+  store i32 %v28, i32* %v33
   %v34 = load i32, i32* %v33
   %v35 = icmp sge i32 0, %v34
   br i1 %v35, label %bounds1, label %bounds_end1
@@ -319,6 +323,7 @@ neg_index_end4:
   %v43 = mul i32 %v42, 4
   %v44 = call i8* @calloc(i32 1, i32 %v43)
   %v45 = bitcast i8* %v44 to i32*
+  store i32 %v40, i32* %v45
   %v46 = load i32, i32* %v45
   %v47 = icmp sge i32 2, %v46
   br i1 %v47, label %bounds2, label %bounds_end2
@@ -518,6 +523,7 @@ neg_index_end3:
   %v65 = mul i32 %v64, 4
   %v66 = call i8* @calloc(i32 1, i32 %v65)
   %v67 = bitcast i8* %v66 to i32*
+  store i32 %v62, i32* %v67
   %v68 = bitcast i8* %v0 to i8***
   %v69 = load i8**, i8*** %v68
   %v70 = getelementptr inbounds i8*, i8** %v69, i32 6
@@ -561,6 +567,7 @@ neg_index_end:
   %v6 = mul i32 %v5, 4
   %v7 = call i8* @calloc(i32 1, i32 %v6)
   %v8 = bitcast i8* %v7 to i32*
+  store i32 %v3, i32* %v8
   ret i32* %v8
 }
 
@@ -587,6 +594,7 @@ neg_index_end:
   %v5 = mul i32 %v4, 4
   %v6 = call i8* @calloc(i32 1, i32 %v5)
   %v7 = bitcast i8* %v6 to i32*
+  store i32 10, i32* %v7
   ret i32* %v7
 }
 

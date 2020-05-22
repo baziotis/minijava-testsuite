@@ -1,37 +1,37 @@
 class Main {
-    public static void main(String[] args) {
-        boolean dummy;
-        A a;
-        B b;
-        C c;
-        D d;
-        int separator;
-        int cls_separator;
-        separator = 1111111111;
-        cls_separator= 333333333;
-        
-        dummy = new Receiver().A(new A());
-        System.out.println(separator);
-        dummy = new Receiver().A(new Receiver().alloc_B_for_A());
-        System.out.println(separator);
-        dummy = new Receiver().A(new Receiver().alloc_C_for_A());
-        System.out.println(separator);
-        dummy = new Receiver().A(new Receiver().alloc_D_for_A());
+  public static void main(String[] args) {
+    boolean dummy;
+    A a;
+    B b;
+    C c;
+    D d;
+    int separator;
+    int cls_separator;
+    separator = 1111111111;
+    cls_separator = 333333333;
 
-        System.out.println(cls_separator);
+    dummy = new Receiver().A(new A());
+    System.out.println(separator);
+    dummy = new Receiver().A(new Receiver().alloc_B_for_A());
+    System.out.println(separator);
+    dummy = new Receiver().A(new Receiver().alloc_C_for_A());
+    System.out.println(separator);
+    dummy = new Receiver().A(new Receiver().alloc_D_for_A());
 
-        dummy = new Receiver().B(new B());
-        System.out.println(separator);
-        dummy = new Receiver().B(new Receiver().alloc_D_for_B());
+    System.out.println(cls_separator);
 
-        System.out.println(cls_separator);
+    dummy = new Receiver().B(new B());
+    System.out.println(separator);
+    dummy = new Receiver().B(new Receiver().alloc_D_for_B());
 
-        dummy = new Receiver().C(new C());
+    System.out.println(cls_separator);
 
-        System.out.println(cls_separator);
+    dummy = new Receiver().C(new C());
 
-        dummy = new Receiver().D(new D());
-    }
+    System.out.println(cls_separator);
+
+    dummy = new Receiver().D(new D());
+  }
 }
 
 class Receiver {
@@ -69,67 +69,39 @@ class Receiver {
     return true;
   }
 
-  public A alloc_B_for_A() {
-    return new B();
-  }
+  public A alloc_B_for_A() { return new B(); }
 
-  public A alloc_C_for_A() {
-    return new C();
-  }
+  public A alloc_C_for_A() { return new C(); }
 
-  public A alloc_D_for_A() {
-    return new D();
-  }
+  public A alloc_D_for_A() { return new D(); }
 
-  public B alloc_D_for_B() {
-    return new D();
-  }
+  public B alloc_D_for_B() { return new D(); }
 }
 
 class A {
-  public int foo() {
-    return 1;
-  }
-  
-  public int bar() {
-    return 2;
-  }
-  
-  public int test() {
-    return 3;
-  }
+  public int foo() { return 1; }
+
+  public int bar() { return 2; }
+
+  public int test() { return 3; }
 }
 
 class B extends A {
-  public int bar() {
-    return 12;
-  }
+  public int bar() { return 12; }
 
-  public int not_overriden() {
-    return 14;
-  }
+  public int not_overriden() { return 14; }
 
-  public int another() {
-    return 15;
-  }
+  public int another() { return 15; }
 }
 
 class C extends A {
-  public int bar() {
-    return 22;
-  }
+  public int bar() { return 22; }
 }
 
 class D extends B {
-  public int bar() {
-    return 32;
-  }
+  public int bar() { return 32; }
 
-  public int another() {
-    return 35;
-  }
+  public int another() { return 35; }
 
-  public int stef() {
-    return 36;
-  }
+  public int stef() { return 36; }
 }

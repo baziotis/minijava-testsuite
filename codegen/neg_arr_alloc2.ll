@@ -32,6 +32,7 @@ neg_index_end:
   %v6 = mul i32 %v5, 4
   %v7 = call i8* @calloc(i32 1, i32 %v6)
   %v8 = bitcast i8* %v7 to i32*
+  store i32 %v3, i32* %v8
   store i32* %v8, i32** %v0
   ret i32 0
 }

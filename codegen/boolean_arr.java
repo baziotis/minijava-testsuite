@@ -26,7 +26,7 @@ class LetTheFunBegin {
     // Make sure that after filling the array which in
     // the middle of `B`, B.a and B.c have remain intact,
     // i.e. 0
-    System.out.println(b.fill_arr());  // We don't care about this print
+    System.out.println(b.fill_arr()); // We don't care about this print
     System.out.println(b.get_a());
     if (b.get_c()) {
       d = 1;
@@ -58,9 +58,7 @@ class A {
     return res;
   }
 
-  public boolean[] another() {
-    return this.foo();
-  }
+  public boolean[] another() { return this.foo(); }
 }
 
 class B {
@@ -82,11 +80,7 @@ class B {
     return 0;
   }
 
-  public int get_a() {
-    return a;
-  }
+  public int get_a() { return a; }
 
-  public boolean get_c() {
-    return c;
-  }
+  public boolean get_c() { return c; }
 }

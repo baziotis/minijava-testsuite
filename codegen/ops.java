@@ -38,10 +38,10 @@ class A {
     C c;
     a = 2;
     c = new C();
-    return (((29347 + (this.t2())) < 12) &&
-            (((a < (arr[0])) && (this.t3())) &&
-             (this.t6(this.t4((new B().test(true))[0], arr),
-                      new int[arr[0]]))));
+    return (
+        ((29347 + (this.t2())) < 12) &&
+        (((a < (arr[0])) && (this.t3())) &&
+         (this.t6(this.t4((new B().test(true))[0], arr), new int[arr[0]]))));
   }
 }
 
