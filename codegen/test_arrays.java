@@ -5,7 +5,7 @@ class Main {
     int sum;
     int[] int_array;
     int[] int_array_ref;
-    boolean[] boolean_array;
+    int[] boolean_array;
     boolean flag;
     size = 1024;
     int_array = new int[(((size) + 1) - 1)];
@@ -14,7 +14,7 @@ class Main {
     } else {
       System.out.println(2020);
     }
-    boolean_array = new boolean[(((size) + 1) - 1)];
+    boolean_array = new int[(((size) + 1) - 1)];
     if ((!((boolean_array.length) < size)) &&
         (!((size < (boolean_array.length))))) {
       System.out.println((boolean_array.length));

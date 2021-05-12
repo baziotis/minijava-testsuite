@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] a) {
-    boolean[] b;
-    b = new boolean[2];
+    int[] b;
+    b = new int[2];
     if (b[2]) {
       System.out.println(1);
     } else {

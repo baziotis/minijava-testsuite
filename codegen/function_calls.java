@@ -3,14 +3,14 @@ class Main {
     A a;
     B b;
     int[] int_array;
-    boolean[] boolean_array;
+    int[] boolean_array;
     int i;
     boolean flag;
     a = new A();
     b = new B();
     i = b.Init();
     int_array = new int[1000];
-    boolean_array = new boolean[1000];
+    boolean_array = new int[1000];
     i = 0;
     while (i < (int_array.length)) {
       int_array[i] = (i * 2);
@@ -43,12 +43,12 @@ class A {
   }
   public int[] func_int_array(int[] arr) { return arr; }
   public boolean func_boolean(boolean b) { return b; }
-  public boolean[] func_boolean_array(boolean[] arr) { return arr; }
+  public int[] func_boolean_array(int[] arr) { return arr; }
   public int decrease(int i) {
     i = i - 1;
     return i;
   }
-  public int func(int i, int[] int_arr, boolean b, boolean[] b_arr, B c_b) {
+  public int func(int i, int[] int_arr, boolean b, int[] b_arr, B c_b) {
     int j;
     int sum;
     System.out.println(data);

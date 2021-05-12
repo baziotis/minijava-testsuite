@@ -1,8 +1,8 @@
 class Main {
   public static void main(String[] a) {
-    boolean[] b;
+    int[] b;
     int c;
-    b = new boolean[2];
+    b = new int[2];
     c = 0 - 1;
     if (b[c]) {
       System.out.println(1);

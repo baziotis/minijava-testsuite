@@ -1,10 +1,10 @@
 class Main {
   public static void main(String[] irrelevant) {
-    boolean[] c;
+    int[] c;
     int d;
     A a;
     a = new A();
-    c = new boolean[2];
+    c = new int[2];
     c[1] = false;
     if (c[1]) {
       System.out.println(1);
@@ -24,8 +24,8 @@ class Main {
 }
 
 class A {
-  public boolean[] foo() {
-    return (new boolean[200]);
+  public int[] foo() {
+    return (new int[200]);
   }
 
   public int bar(boolean a) {
@@ -38,7 +38,7 @@ class A {
     return res;
   }
 
-  public boolean[] another() {
+  public int[] another() {
     return this.foo();
   }
 }
