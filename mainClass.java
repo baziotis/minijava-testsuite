@@ -14,7 +14,6 @@ class B extends Blah {
   int a;
   boolean b;
   int[] c;
-  int[] d;
   C c2;
   boolean dummy;
 
