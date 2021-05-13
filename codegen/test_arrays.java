@@ -5,7 +5,6 @@ class Main {
     int sum;
     int[] int_array;
     int[] int_array_ref;
-    int[] boolean_array;
     boolean flag;
     size = 1024;
     int_array = new int[(((size) + 1) - 1)];
@@ -14,10 +13,9 @@ class Main {
     } else {
       System.out.println(2020);
     }
-    boolean_array = new int[(((size) + 1) - 1)];
-    if ((!((boolean_array.length) < size)) &&
-        (!((size < (boolean_array.length))))) {
-      System.out.println((boolean_array.length));
+    if ((!((int_array.length) < size)) &&
+        (!((size < (int_array.length))))) {
+      System.out.println((int_array.length));
     } else {
       System.out.println(2020);
     }
@@ -36,15 +34,14 @@ class Main {
     System.out.println(sum);
     index = 0;
     flag = true;
-    while (index < (boolean_array.length)) {
-      boolean_array[index] = flag;
+    while (index < (int_array.length)) {
       flag = !flag;
       index = index + 1;
     }
     index = 0;
     sum = 0;
-    while (index < (boolean_array.length)) {
-      if ((boolean_array[index])) {
+    while (index < (int_array.length)) {
+      if ((int_array[index]) < 1) {
         sum = sum + 1;
       } else {
         sum = sum + 10;
