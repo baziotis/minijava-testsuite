@@ -1,11 +1,11 @@
 class LetTheFunBegin {
   public static void main(String[] irrelevant) {
     B b;
-    boolean[] c;
+    int[] c;
     int d;
     A a;
     a = new A();
-    c = new boolean[2];
+    c = new int[2];
     c[1] = false;
     if (c[1]) {
       System.out.println(1);
@@ -41,9 +41,9 @@ class LetTheFunBegin {
 }
 
 class A {
-  public boolean[] foo() {
-    boolean[] b;
-    b = new boolean[200];
+  public int[] foo() {
+    int[] b;
+    b = new int[200];
     b[2] = true;
     return b;
   }
@@ -58,19 +58,19 @@ class A {
     return res;
   }
 
-  public boolean[] another() { return this.foo(); }
+  public int[] another() { return this.foo(); }
 }
 
 class B {
   int a;
-  boolean[] b;
+  int[] b;
   boolean c;
   public int fill_arr() {
-    boolean[] arr;
+    int[] arr;
     int i;
     int len;
     len = 100;
-    arr = new boolean[len];
+    arr = new int[len];
     i = 0;
     while (i < len) {
       arr[i] = true;

@@ -1,8 +1,8 @@
 class Main {
   public static void main(String[] args){
-    boolean[] a;
+    int[] a;
     boolean b;
-    boolean[] arr;
-    arr[0] = a && b;
+    boolean c;
+    c = a && b;
   }
 }

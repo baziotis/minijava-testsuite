@@ -9,9 +9,9 @@ class AnotherRandomName {
 
 class A {
   public int foo() {
-    boolean[] b;
-    b = new boolean[20];
-    System.out.println(b[2]);
+    int[] b;
+    b = new int[20];
+    System.out.println(b);
     return 0;
   }
 }

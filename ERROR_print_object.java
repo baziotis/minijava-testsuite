@@ -9,9 +9,13 @@ class Blah {
 
 class A {
   public int foo() {
-    boolean[] b;
-    b = new boolean[20];
-    System.out.println(b);
+		C c;
+		c = new C();
+    System.out.println(c);
     return 0;
   }
+}
+
+class C {
+	int a;
 }

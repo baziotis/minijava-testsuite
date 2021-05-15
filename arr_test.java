@@ -1,15 +1,15 @@
 class Main {
   public static void main(String[] irrelevant) {
-    boolean[] c;
+    int[] c;
     int d;
     A a;
     a = new A();
-    c = new boolean[2];
-    c[1] = false;
-    if (c[1]) {
+    c = new int[2];
+    c[1] = 1;
+    if ((c[1]) < 2) {
       System.out.println(1);
     } else {
-      if ((a.foo())[2]) {
+      if (((a.foo())[2]) < 0) {
         System.out.println(10);
       } else {
         System.out.println(20);
@@ -24,13 +24,13 @@ class Main {
 }
 
 class A {
-  public boolean[] foo() {
-    return (new boolean[200]);
+  public int[] foo() {
+    return (new int[200]);
   }
 
-  public int bar(boolean a) {
+  public int bar(int a) {
     int res;
-    if (a) {
+    if ((a < 2) && (0 < a)) {
       res = 1;
     } else {
       res = 2;
@@ -38,7 +38,7 @@ class A {
     return res;
   }
 
-  public boolean[] another() {
+  public int[] another() {
     return this.foo();
   }
 }

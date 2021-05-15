@@ -1,10 +1,10 @@
 class Main {
   public static void main(String[] a) {
-    boolean[] b;
+    int[] b;
     int c;
-    b = new boolean[2];
+    b = new int[2];
     c = 0 - 1;
-    if (b[c]) {
+    if (((b[c]) < 1)) {
       System.out.println(1);
     } else {
       System.out.println(0);
